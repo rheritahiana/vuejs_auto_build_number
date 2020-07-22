@@ -47,6 +47,12 @@ import metadata from "@/metadata.json";
     },  
   }),
   
+  // Assign the data from json to data vars when the component is created
+    created() {
+    this.metadata.build=metadata.build;
+    this.metadata.date=metadata.date;
+  },
+  
  // in template
    <div>
           <div>Version</div>
